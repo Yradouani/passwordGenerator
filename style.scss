@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Open sans, Helvetica, sans-serif;
+  background: #111;
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+  display: flex;
+}
+
+span,
+label {
+  color: white;
+}
+
+.container {
+  margin: auto;
+  // max-width: 800px;
+  // min-width: 600px;
+  padding: 10px;
+  width: clamp(300px, 600px, 800px)
+}
+
+.password-title {
+  margin: 15px 0;
+  display: block;
+  font-size: 22px;
+}
+
+.password-container {
+  display: flex;
+  width: 100%;
+
+  .password-content {
+    width: 100%;
+    margin-right: 10px;
+    border-bottom: 2px solid gray;
+  }
+
+  button {
+    width: 35px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.range-container {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    margin-top: 10px;
+    cursor: pointer;
+    height: 4px;
+  }
+}
+
+.input_container {
+  margin: 15px 0;
+
+  div {
+    margin: 10px 0;
+
+    label {
+      margin-left: 5px;
+    }
+
+    input {
+      font-size: 15px;
+    }
+  }
+}
+
+.generate {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin: 30px auto;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.error-message {
+  text-align: center;
+  color: white;
+}
